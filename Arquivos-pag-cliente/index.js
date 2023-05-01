@@ -26,6 +26,7 @@ themeToggler.addEventListener('click', () => {
 
     if (toggleImage) {
         getLogo.src = "images/logoDarkTheme.png";
+    } else {
         getLogo.src = "images/logo.png";
     }
    
