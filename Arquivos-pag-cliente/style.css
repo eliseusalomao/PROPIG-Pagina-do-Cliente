@@ -3,7 +3,6 @@
 /* Variaveis do ROOT*/
 :root {
     --color-primary: #7380ec;
-<<<<<<< HEAD
     --color-sucess: #00C244;
     --color-warning: #ffbb55;
     --color-danger: #dd1b1b;
@@ -142,7 +141,6 @@ b {
     color: var(--color-warning);
 }
 
-
 aside {
     height: 100vh;
 }
@@ -178,7 +176,6 @@ aside .sidebar {
 aside h3 {
     font-weight: 500;
 }
-
 
 /* fiz algumas alterações*/
 aside .sidebar a {
@@ -237,24 +234,6 @@ main {
     margin-top: 2rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 main .insights {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -267,11 +246,7 @@ main .insights>div {
     border-radius: var(--card-border-radius);
     margin-top: 1rem;
     box-shadow: var(--box-shadow);
-
     transition: all 200ms ease;
-
-
-
 }
 
 main .insights>div:hover {
@@ -327,15 +302,6 @@ main .insights svg circle {
     stroke-dashoffset: 92;
 }
 
-
-
-
-
-
-
-
-
-
 main .insights .expenses svg circle {
     stroke-dashoffset: 20;
     stroke-dasharray: 180;
@@ -365,10 +331,7 @@ main .recent-orders {
 }
 
 main .recent-orders h2 {
-
     margin-left: 2rem;
-
-
     margin-bottom: 0.8rem;
 }
 
@@ -377,7 +340,6 @@ main .recent-orders table {
     width: 100%;
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
-
     text-align: left;
     box-shadow: var(--box-shadow);
     transition: all 200ms ease;
@@ -387,22 +349,8 @@ main .recent-orders table th {
     font-size: 20px;
 }
 
-
 main table tbody td {
     height: 3.8rem;
-
-
-
-
-
-
-
-
-
-
-
-
-
     border-bottom: 1px solid var(--color-light);
     color: var(--color-dark-variant);
 }
@@ -440,12 +388,6 @@ main .recent-orders a {
     background: var(--color-light);
     display: flex;
     align-self: center;
-
-
-
-
-
-
     height: 1.6rem;
     width: 4.2rem;
     border-radius: var(--border-radius-1);
@@ -467,17 +409,11 @@ main .recent-orders a {
     border-radius: var(--border-radius-1);
 }
 
-
 /* Fiz algumas alterações */
 .right .top .profile {
     display: flex;
     gap: 2rem;
     align-items: center;
-
-
-
-
-
     text-align: right;
 }
 
@@ -488,27 +424,16 @@ main .recent-orders a {
 }
 
 .right .recent-updates h2 {
-
     text-align: center;
-
-
     margin-bottom: 0.8rem;
-
+}
 
 .right .recent-updates .updates {
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
-
     transition: all 200ms ease;
-
-
-
-
-
-
-
 }
 
 .right .recent-updates .updates .update {
@@ -517,66 +442,6 @@ main .recent-orders a {
     gap: 1rem;
     margin-bottom: 1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*====MEDIA QUERIES===================*/
 
@@ -636,11 +501,7 @@ main .recent-orders a {
         height: 100vh;
         padding-right: var(--card-padding);
         display: none;
-
         animation: showMenu 200ms ease forwards;
-
-
-
     }
 
     @keyframes showMenu{
@@ -662,19 +523,14 @@ main .recent-orders a {
     }
 
     aside .sidebar a {
-
         margin-left: 1rem;
-
-
         width: 100%;
         height: 3.4rem;
     }
 
     aside .sidebar a:last-child {
         position: absolute;
-
         top: 2rem;
-
         bottom: 5rem;
 
     }
@@ -722,11 +578,7 @@ main .recent-orders a {
     }
 
     .right .top .theme-toggler {
-<<<<<<< HEAD
         width: 3rem;
-
-
-
         position: absolute;
         left: 66%;
     }
@@ -745,19 +597,15 @@ main .recent-orders a {
         font-size: 2rem;
     }
 
-<<<<<<< HEAD
 }
 
 .aproximação-hover:hover{
     transform: scale(1.2);
-
-
 }
 
 .aproximação-hover {
     transition: 100ms linear;
     max-width: 10%;
-
 }
 
 
