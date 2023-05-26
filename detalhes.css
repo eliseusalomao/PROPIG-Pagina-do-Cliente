@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+:root {
+    --color-primary: #7380ec;
+    --color-sucess: #00C244;
+    --color-warning: #ffbb55;
+    --color-danger: #dd1b1b;
+    --color-white: #fff;
+    --color-info-dark: #818D9C;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #000000;
+    --color-background: #f6f6f9;
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
 /*--------Dark THEME VARIVAIES*/
 .dark-theme-variables{
     --color-background:#181a1e;
@@ -8,6 +30,17 @@
     --color-dark-variant:#B2BBC2;
     --color-light:rgba(0, 0, 0, 0.4);
     --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 html {
@@ -24,15 +57,186 @@ body {
     overflow-x: hidden;
     color: var(--color-dark);
 }
-.cliente {
+
+/**Corresponde a toda aplicação (página de detalhes)**/
+.detalhes {
     display: grid;
     width: 96%;
     margin: 0 auto;
     gap: 1.8rem;
     grid-template-columns: 14rem auto 23rem;
 }
-img {
+
+.detalhes h2 {
+    font-size: 1.4rem;
+}
+
+.detalhes a {
+    color: var(--color-dark);
+}
+
+.detalhes img {
     display: block;
     width: 100%;
 }
+
+.detalhes small {
+    font-size: 0.75rem;
+}
+
+.detalhes small .text-muted {
+    color: var(--color-dark);
+}
+
+/**Corresponde ao tamanho do menu lateral**/
+.menu-lateral-detalhes {
+    height: 100vh;
+}
+
+/**Corresponde a logo (a logo faz parte do menu lateral)**/
+.logo-container-detalhes {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+.logo-container-detalhes.logo {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.logo-container-detalhes .close-detalhes {
+    display: none;
+}
+
+/**Corresponde as opcoes listadas no menu lateral**/
+.opcoes-menu-detalhes {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+}
+
+.opcoes-menu-detalhes h3 {
+    font-weight: 500;
+    font-size: 0.87rem;
+}
+
+.opcoes-menu-detalhes  a {
+    display: flex;
+    color: var(--color-dark);
+    margin-left: 1%;
+    gap: 2%;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+}
+
+.opcoes-menu-detalhes a span {
+    font-size: 25.6px;
+    transition: all 200ms ease;
+}
+
+.opcoes-menu-detalhes a.active {
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
+}
+
+.opcoes-menu-detalhes a.active:before {
+    content: "";
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary);
+}
+
+.opcoes-menu-detalhes a.active span {
+    color: var(--color-primary);
+    margin-left: calc(1rem - 3px);
+}
+
+.opcoes-menu-detalhes a:hover {
+    color: var(--color-primary);
+}
+
+.opcoes-menu-detalhes a:hover span {
+    margin-left: 1rem;
+}
+
+/**Seção de detalhes**/
+.secao-detalhes {
+    margin: 4rem 5rem;
+    padding: 0;
+    width: 100%;
+}
+
+/**Perfil lateral**/
+.perfil-lateral-detalhes {
+    margin-top: 1.64rem;
+}
+
+.secao-superior-detalhes {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.secao-superior-detalhes button {
+    display: none;
+}
+
+.secao-superior-detalhes .alterar-tema-detalhes {
+    background: var(--color-light);
+    display: flex;
+    align-self: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    border-radius: var(--border-radius-1);
+    cursor: pointer;
+}
+
+.secao-superior-detalhes .alterar-tema-detalhes span {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secao-superior-detalhes .alterar-tema-detalhes span.active {
+    background: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+
+.secao-superior-detalhes .perfil-cliente-detalhes {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    text-align: right;
+}
+
+.secao-superior-detalhes .perfil-cliente-detalhes .info-cliente-detalhes p {
+    font-size: 15px;
+}
+
+.secao-superior-detalhes .perfil-cliente-detalhes .foto-perfil-detalhes {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* .cliente {
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+} */
 
